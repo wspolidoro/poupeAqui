@@ -7,8 +7,10 @@ interface WhatsAppValidationResponse {
 export async function validateWhatsAppNumber(phoneNumber: string): Promise<{ exists: boolean; whatsappId?: string }> {
   try {
     const credentials = btoa('USUARIO:SENHA');
+    const apiUrlProd = "https://n8.z4u.com.br/webhook/verifica-zap";
+    const apiUrlSandbox = "https://n8.z4u.com.br/webhook-test/verifica-zap";
     
-    const response = await fetch('https://n8.z4u.com.br/webhook-test/verifica-zap', {
+    const response = await fetch(apiUrlProd, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

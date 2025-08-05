@@ -14,7 +14,10 @@ export const fetchUserSubscriptionId = async (userId: string): Promise<string | 
 }
 
 export const fetchSubscriptionInfo = async (subscriptionId: string): Promise<SubscriptionData> => {
-  const response = await fetch('https://n8n.flowgenius.com.br/webhook-test/assinatura/info', {
+  const apiUrlProd = "https://n8.z4u.com.br/webhook/assinatura/info";
+  const apiUrlSandbox = "https://n8.z4u.com.br/webhook-test/assinatura/info";
+
+  const response = await fetch(apiUrlProd, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
