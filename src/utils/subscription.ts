@@ -3,25 +3,26 @@ import { supabase } from '@/integrations/supabase/client'
 import type { SubscriptionData } from '@/types/subscription'
 
 export const fetchUserSubscriptionId = async (userId: string): Promise<string | null> => {
+  
   const { data, error } = await supabase
     .from('profiles')
     .select('assinaturaid')
     .eq('id', userId)
     .single()
 
-  if (error) throw error
+    if (error) throw error
   return data?.assinaturaid || null
 }
 
 export const fetchSubscriptionInfo = async (subscriptionId: string): Promise<SubscriptionData> => {
-  const apiUrlProd = "https://n8.z4u.com.br/webhook/assinatura/info";
+const apiUrlProd = "https://n8.z4u.com.br/webhook/assinatura/info";
   const apiUrlSandbox = "https://n8.z4u.com.br/webhook-test/assinatura/info";
 
   const response = await fetch(apiUrlProd, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + btoa('USUARIO:SENHA')
+      'Authorization': 'Basic ' + btoa('devuser:devziizuser')
     },
     body: new URLSearchParams({
       subscription: subscriptionId

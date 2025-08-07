@@ -17,7 +17,7 @@ export function AppLayout({ children }: AppLayoutProps) {
             <div className="flex items-center gap-4">
               <SidebarTrigger />
               <h1 className="text-lg font-semibold title-color hidden sm:block">
-                POUPE AGORA - Sistema de Gestão Financeira
+                WAPOUP - Sistema de Gestão Financeira
               </h1>
             </div>
             <ThemeToggle />

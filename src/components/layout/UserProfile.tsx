@@ -78,7 +78,7 @@ export function UserProfile() {
       <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg hover:bg-muted/70 transition-colors">
         <Avatar className="h-10 w-10">
           <AvatarImage src={profile.avatar_url} />
-          <AvatarFallback className="bg-primary text-primary-foreground">
+          <AvatarFallback className="bg-[#009600e6] text-primary-foreground">
             {getInitials(profile.nome)}
           </AvatarFallback>
         </Avatar>

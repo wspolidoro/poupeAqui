@@ -45,7 +45,7 @@ export default function Auth() {
             <img 
              // src="/lovable-uploads/1c9bdf0f-2ce0-4cff-b275-4506803853fe.png" 
              src="/img-default/rh2Mesa de trabajo 1.png" 
-              alt="POUPE AGORA" 
+              alt="WAPOUP" 
               className="h-14 sm:h-14 w-auto" 
             />
           </div>

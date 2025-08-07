@@ -357,14 +357,14 @@ export default function Perfil() {
                 <div className="relative">
                   <Avatar className="h-24 w-24">
                     <AvatarImage src={profile.avatar_url} />
-                    <AvatarFallback className="bg-primary text-primary-foreground text-lg">
+                    <AvatarFallback className="bg-[#009600e6] text-primary-foreground text-lg">
                       {profile.nome ? getInitials(profile.nome) : <User className="h-8 w-8" />}
                     </AvatarFallback>
                   </Avatar>
                   <Button
                     size="icon"
                     variant="outline"
-                    className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full border-primary text-primary hover:bg-[#009600e6] hover:text-primary-foreground"
                     disabled={uploading}
                     onClick={() => document.getElementById('avatar-upload')?.click()}
                   >
@@ -416,7 +416,7 @@ export default function Perfil() {
                 <Button 
                   type="submit" 
                   disabled={saving}
-                  className="w-full md:w-auto"
+                  className="w-full md:w-auto bg-[#009600e6] text-primary-foreground hover:bg-[#009600e6]/90"
                 >
                   {saving ? 'Salvando...' : 'Salvar Alterações'}
                 </Button>

@@ -44,14 +44,14 @@ export function AppSidebar() {
             <div className="min-w-8">
               <img 
                 src="/lovable-uploads/a5a40de7-4096-4a32-af0c-76fe03ec72f7.png"
-                alt="POUPE AGORA Icon" 
+                alt="WAPOUP Icon" 
                 className="h-8 w-8"
               />
             </div>
           ) : (
             <img 
               src="/img-default/rh2Mesa de trabajo 1.png" 
-              alt="POUPE AGORA" 
+              alt="WAPOUP" 
               className="h-8 w-auto"
             />
           )}
@@ -71,7 +71,7 @@ export function AppSidebar() {
                     asChild
                     className={`${
                       isActive(item.url)
-                        ? 'bg-primary text-primary-foreground hover:bg-primary/90'
+                        ? 'bg-[#009600e6] text-primary-foreground hover:bg-[#009600e6]/90'
                         : 'hover:bg-accent'
                     }`}
                   >

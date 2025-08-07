@@ -102,7 +102,7 @@ export default function Plano() {
           <div>
             <img 
               src="/img-default/rh2Mesa de trabajo 1.png" 
-              alt="POUPE AGORA" 
+              alt="WAPOUP" 
               className="h-14 sm:h-14 w-auto" 
             />
           </div>
