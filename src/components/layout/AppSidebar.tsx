@@ -50,7 +50,7 @@ export function AppSidebar() {
             </div>
           ) : (
             <img 
-              src="/lovable-uploads/1c9bdf0f-2ce0-4cff-b275-4506803853fe.png" 
+              src="/img-default/rh2Mesa de trabajo 1.png" 
               alt="POUPE AGORA" 
               className="h-8 w-auto"
             />
