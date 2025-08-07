@@ -66,7 +66,7 @@ export function ForgotPasswordForm({ onBack }: ForgotPasswordFormProps) {
         </div>
         <Button
           type="submit"
-          className="w-full h-11 bg-primary hover:bg-primary/90"
+          className="w-full h-11 bg-[#009600e6] hover:bg-[#009600e6]/90"
           disabled={loading}
         >
           {loading ? (
@@ -84,7 +84,7 @@ export function ForgotPasswordForm({ onBack }: ForgotPasswordFormProps) {
         <Button
           variant="link"
           onClick={onBack}
-          className="text-sm text-muted-foreground hover:text-primary"
+          className="text-sm text-muted-foreground hover:text-[#009600e6]"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Voltar ao login

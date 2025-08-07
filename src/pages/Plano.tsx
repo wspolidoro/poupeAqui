@@ -38,7 +38,7 @@ export default function Plano() {
       {/* Left side - Image */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden rounded-3xl">
         <img 
-          src="/lovable-uploads/e73af031-b391-404d-a839-c9cbe548576b.png" 
+          src="/img-default/login.png" 
           alt="Finance Management" 
           className="w-full h-full object-cover" 
         />
@@ -101,16 +101,16 @@ export default function Plano() {
         <div className="w-full max-w-md lg:max-w-lg mt-4 sm:mt-8 lg:mt-16 space-y-4">
           <div>
             <img 
-              src="/lovable-uploads/1c9bdf0f-2ce0-4cff-b275-4506803853fe.png" 
+              src="/img-default/rh2Mesa de trabajo 1.png" 
               alt="POUPE AGORA" 
-              className="h-6 sm:h-8 w-auto" 
+              className="h-14 sm:h-14 w-auto" 
             />
           </div>
           
           <div className="w-full mx-auto">
             <div className="text-start py-4 sm:py-6 lg:py-8">
               <h1 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2 dark:text-slate-300">
-                Plano Assistente Financeiro  R$57,00/ano
+                Plano Assistente Financeiro  R$29,90/mês
               </h1>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8">
                 Organize suas finanças de forma simples e inteligente!
@@ -120,7 +120,7 @@ export default function Plano() {
               <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="bg-primary rounded-full p-1 mt-0.5 flex-shrink-0">
+                    <div className="bg-[#009600e6] rounded-full p-1 mt-0.5 flex-shrink-0">
                       <Check className="h-3 w-3 text-white" />
                     </div>
                     <p className="text-sm sm:text-base text-foreground">{benefit}</p>
@@ -129,8 +129,8 @@ export default function Plano() {
               </div>
 
               {/* Impact Message */}
-              <div className="bg-primary/10 rounded-lg p-3 sm:p-4 mb-6 sm:mb-8">
-                <p className="text-base sm:text-lg font-semibold text-primary text-center">
+              <div className="bg-[#009600e6]/10 rounded-lg p-3 sm:p-4 mb-6 sm:mb-8">
+                <p className="text-base sm:text-lg font-semibold text-[#009600e6] text-center">
                   Invista no controle da sua vida financeira por menos de R$1 por dia!
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default function Plano() {
               <div className="space-y-3 sm:space-y-4">
                 <Button 
                   onClick={handleSubscribe} 
-                  className="w-full h-11 bg-primary hover:bg-primary/90 text-base sm:text-lg font-semibold"
+                  className="w-full h-11 bg-[#009600e6] hover:bg-[#009600e6]/90 text-base sm:text-lg font-semibold"
                 >
                   Assinar agora
                 </Button>
@@ -147,7 +147,7 @@ export default function Plano() {
                 <Button 
                   variant="outline" 
                   onClick={handleBackToLogin} 
-                  className="w-full h-11 border-primary text-primary hover:bg-primary hover:text-primary-foreground text-base sm:text-lg"
+                  className="w-full h-11 border-[#009600e6] text-[#009600e6] hover:bg-[#009600e6] hover:text-primary-foreground text-base sm:text-lg"
                 >
                   Voltar ao login
                 </Button>
