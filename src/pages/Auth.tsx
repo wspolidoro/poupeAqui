@@ -7,8 +7,9 @@ import { ThemeToggle } from '@/components/ui/theme-toggle';
 type AuthMode = 'login' | 'forgot';
 
 const authImages = {
-  login: '/lovable-uploads/e73af031-b391-404d-a839-c9cbe548576b.png',
-  forgot: '/lovable-uploads/e73af031-b391-404d-a839-c9cbe548576b.png'
+  //login: '/lovable-uploads/e73af031-b391-404d-a839-c9cbe548576b.png',
+  login: '/img-default/login.png',
+  forgot: '/img-default/login.png'
 };
 
 export default function Auth() {
@@ -21,9 +22,9 @@ export default function Auth() {
         <img 
           src={authImages[mode]} 
           alt="Finance Management" 
-          className="w-full h-full object-cover" 
+          className="w-full object-cover" 
         />
-        <div className="absolute inset-0 bg-primary/20" />
+        <div className="absolute inset-0" /> {/* bg-primary/20 */}
         <div className="absolute bottom-8 left-8 text-white">
           <div className="flex items-center gap-3 mb-4">
             
@@ -42,9 +43,10 @@ export default function Auth() {
         <div className="w-full max-w-md lg:max-w-lg mt-4 sm:mt-8 space-y-4">
           <div className="mb-1">
             <img 
-              src="/lovable-uploads/1c9bdf0f-2ce0-4cff-b275-4506803853fe.png" 
+             // src="/lovable-uploads/1c9bdf0f-2ce0-4cff-b275-4506803853fe.png" 
+             src="/img-default/rh2Mesa de trabajo 1.png" 
               alt="POUPE AGORA" 
-              className="h-6 sm:h-8 w-auto" 
+              className="h-14 sm:h-14 w-auto" 
             />
           </div>
           

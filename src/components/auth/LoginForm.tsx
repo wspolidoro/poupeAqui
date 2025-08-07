@@ -102,7 +102,7 @@ export function LoginForm({ onForgotPassword }: LoginFormProps) {
         </div>
         <Button
           type="submit"
-          className="w-full h-10 sm:h-11 bg-primary hover:bg-primary/90"
+          className="w-full h-10 sm:h-11 bg-[#009600e6]/90 hover:bg-[#009600e6]/90"
           disabled={loading}
         >
           {loading ? (
@@ -120,7 +120,7 @@ export function LoginForm({ onForgotPassword }: LoginFormProps) {
         <Button
           onClick={handleSubscribeClick}
           variant="outline"
-          className="w-full h-10 sm:h-11 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+          className="w-full h-10 sm:h-11 border-[#009600e6] text-[#009600e6] hover:bg-[#009600e6]/90 hover:text-primary-foreground"
         >
           Adquira já
         </Button>
@@ -128,7 +128,7 @@ export function LoginForm({ onForgotPassword }: LoginFormProps) {
         <Button
           variant="link"
           onClick={onForgotPassword}
-          className="text-sm text-muted-foreground hover:text-primary"
+          className="text-sm text-muted-foreground hover:text-[#009600e6]"
         >
           Esqueceu sua senha?
         </Button>

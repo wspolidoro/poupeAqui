@@ -11,7 +11,7 @@ export default function Plano() {
   
   const handleSubscribe = () => {
     //window.open('https://checkout.perfectpay.com.br/pay/PPU38CPQP6Q?', '_blank');
-    window.open('https://sandbox.asaas.com/c/p2ejp9ya2k07npfd', '_blank');
+    window.open('https://www.asaas.com/c/4be9ignsv6jt5p7k', '_blank');
   };
   
   const handleBackToLogin = () => {
